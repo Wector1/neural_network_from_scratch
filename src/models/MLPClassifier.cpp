@@ -129,7 +129,7 @@ namespace nn::models {
 			}
 
 			if (verbose_) {
-				std::cout << "--- iteration " << i + 1 << " ---" << std::endl;
+				std::cout << "--- epoch " << i + 1 << " ---" << std::endl;
 				std::cout << "accuracy on training set: " << 
 					(double)correctly_classified_this_epoch / X.size() * 100 << "%, ";
 				std::cout << " error: " << epoch_error / X.size() << std::endl;

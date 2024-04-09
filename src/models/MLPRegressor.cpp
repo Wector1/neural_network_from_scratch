@@ -100,7 +100,7 @@ namespace nn::models {
 				output->apply_grad(batch_size_, true, learning_rate_);
 			}
 			if (verbose_)
-				std::cout << "--- iteration " << i + 1 << " error: " << epoch_error / X.size() << std::endl;
+				std::cout << "--- epoch " << i + 1 << " ---\nerror: " << epoch_error / X.size() << std::endl;
 
 			if (epoch_error - best_error < -tol_) {
 				best_error = epoch_error;
