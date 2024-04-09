@@ -5,7 +5,7 @@ project(ai
 )
 
 add_executable(${PROJECT_NAME}
-	examples/iris.cpp
+	examples/square_function.cpp
     src/Tensor.cpp
     src/operations/Operation.cpp
     src/operations/Add.cpp
